@@ -2,6 +2,13 @@
 
 module.exports = {
   root: true,
+  // 'settings': {
+  //   "import/resolver": {
+  //     "webpack": {
+  //       "config": "node_modules/@vue/cli-service/webpack.config.js"
+  //     }
+  //   }
+  // },
   parserOptions: {
     parser: 'babel-eslint'
   },
@@ -11,7 +18,7 @@ module.exports = {
   extends: [
     // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
     // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
-    'plugin:vue/essential', 
+    'plugin:vue/essential',
     // https://github.com/standard/standard/blob/master/docs/RULES-en.md
     'standard'
   ],
@@ -21,9 +28,36 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    // allow async-await
-    'generator-star-spacing': 'off',
+    'semi': ["error", "always"],
+    // don't require .vue extension when importing
+    'import/extensions': ['error', 'always', {
+      js: 'never',
+      vue: 'never'
+    }],
+    // disallow reassignment of function parameters
+    // disallow parameter object manipulation except for specific exclusions
+    'no-param-reassign': ['error', {
+      props: true,
+      ignorePropertyModificationsFor: [
+        'state', // for vuex state
+        'acc', // for reduce accumulators
+        'e' // for e.returnvalue
+      ]
+    }],
+    // allow optionalDependencies
+    'import/no-extraneous-dependencies': ['error', {
+      optionalDependencies: ['test/unit/index.js']
+    }],
+    'no-unused-expressions': ['error', { 'allowShortCircuit': true, 'allowTernary': true }],
+    'no-param-reassign': [2, { "props": false }],
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'comma-dangle': ["error", "only-multiline"],
+    'func-names': ["error", "never"],
+    'prefer-arrow-callback': [0, { 'allowUnboundThis': false }],
+    "consistent-return": 0, //return 后面是否允许省略
+    'no-lonely-if': 0,
+    'max-len': [2, { code: 180 }],
+    'no-extra-boolean-cast': 0
   }
 }
