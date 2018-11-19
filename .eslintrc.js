@@ -2,13 +2,6 @@
 
 module.exports = {
   root: true,
-  // 'settings': {
-  //   "import/resolver": {
-  //     "webpack": {
-  //       "config": "node_modules/@vue/cli-service/webpack.config.js"
-  //     }
-  //   }
-  // },
   parserOptions: {
     parser: 'babel-eslint'
   },

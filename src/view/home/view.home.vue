@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    asd
+    asdasdas
   </div>
 </template>
 
@@ -15,6 +15,8 @@ export default {
 };
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  .hello {
+    background: red;
+  }
 </style>
