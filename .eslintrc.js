@@ -60,7 +60,8 @@ module.exports = {
     "consistent-return": 0, //return 后面是否允许省略
     'no-lonely-if': 0,
     'max-len': [2, { code: 180 }],
-    'no-extra-boolean-cast': 0
+    'no-extra-boolean-cast': 0,
+    'linebreak-style': ["off", "windows"],
 
     // 'no-alert': 0, //禁止使用alert confirm prompt
     // "no-array-constructor": 2, //禁止使用数组构造器
@@ -108,7 +109,6 @@ module.exports = {
     // "no-loop-func": 1, //禁止在循环中使用函数（如果没有引用外部变量不形成闭包就可以）
     // "no-mixed-requires": [0, false], //声明时不能混用声明类型
     // "no-mixed-spaces-and-tabs": [2, false], //禁止混用tab和空格
-    // "linebreak-style": [0, "windows"], //换行风格
     // "no-multi-spaces": 1, //不能用多余的空格
     // "no-multi-str": 2, //字符串不能用\换行
     // "no-multiple-empty-lines": [1, {
