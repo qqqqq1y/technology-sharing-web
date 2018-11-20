@@ -1,0 +1,199 @@
+/* 所有公共样式放在这里 */
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+.main-container {
+  background: #F2F7FA !important;
+}
+
+.el-table th {
+  background: #F2F6FC;
+}
+
+.line-space {
+  margin-top: 16px;
+}
+
+.line-space-large {
+  margin-top: 40px;
+}
+
+.text-primary {
+  color: $--color-text-primary;
+  font-size: $--font-size-primary;
+  line-height: $--font-line-height-primary;
+}
+
+.text-normal {
+  color: $--color-text-regular;
+  font-size: $--font-size-base;
+  line-height: $--font-line-height-regular;
+}
+
+.text-small {
+  color: $--color-text-secondary;
+  font-size: $--font-size-small;
+}
+
+.text-large {
+  color: $--color-text-primary;
+  font-size: $--font-size-large;
+  line-height: 25px;
+}
+
+.text-title {
+  font-size: 28px;
+  line-height: 40px;
+  color: $--color-text-primary;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+  &::after {
+    content: "";
+    padding-left: 100%;
+    display: inline-block;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.el-table th {
+  background: #F2F6FC;
+}
+
+.lh-large {
+  line-height: 28px;
+}
+
+.el-dialog__header {
+  padding: 0;
+}
+
+.text-color-primary {
+  color: $--color-primary;
+}
+
+.text-color-info {
+  color: $--color-info;
+}
+
+.text-color-danger {
+  color: $--color-danger;
+}
+
+.text-color-success {
+  color: $--color-success;
+}
+
+.text-color-warning {
+  color: $--color-warning;
+}
+
+
+.text-color-blue {
+  color: #54C0EF;
+}
+
+.text-color-purple {
+  color: #997EE5;
+}
+
+.text-color-green-bright {
+  color: #00F303;
+}
+
+.text-color-green-light {
+  color: #9BFB99;
+}
+
+.text-color-grey-light {
+  color: #C0C4CC;
+}
+
+.text-separator {
+  color: #D8DCE6;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.upload_IdCard {
+  float: left;
+  margin-right: 24px;
+}
+
+.avatar-uploader .el-upload {
+
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-uploader .el-upload:hover {
+  border-color: #409EFF;
+}
+
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 222px;
+  height: 132;
+  line-height: 132;
+  text-align: center;
+}
+
+.avatar {
+  margin: 8px;
+  width: 222px;
+  height: 132px;
+  display: block;
+}
+
+.pd-24 {
+  padding: 24px;
+}

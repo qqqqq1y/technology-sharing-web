@@ -1,13 +1,12 @@
 <template>
-  <div>
-    <Header></Header>
-    <router-view/>
+  <div class="header">
+    asd
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app-entry'
+
 };
 </script>
 

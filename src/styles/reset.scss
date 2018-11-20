@@ -1,0 +1,60 @@
+/* 所有有关重置css样式的都放在这里 */
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  background-color: #fff;
+}
+
+body,
+html {
+  height: 100%;
+}
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.el-select .el-input .el-select__caret {
+  line-height: 1;
+}
+
+.service-step {
+  .el-step__icon.is-text {
+    width: 8px;
+    height: 8px;
+    overflow: hidden;
+    background: #F2F7FA;
+    .el-step__icon-inner {
+      position: absolute;
+      z-index: -1;
+      top: -10000px;
+    }
+  }
+  .el-step__title {
+    line-height: 1.5;
+    font-size: 14px;
+  }
+}
+
+.limit-container {
+  .el-input {
+    .el-input__inner {
+      border: none;
+    }
+  }
+}
+
+.el-tooltip__popper {
+  .popper__arrow {
+    left: 24px !important;
+  }
+}
