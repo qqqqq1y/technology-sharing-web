@@ -20,10 +20,13 @@
     "install": "^0.12.2",
     "npm": "^6.4.1",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-draggable-resizable": "^1.7.5",
+    "vue-router": "^3.0.1",
+    "vue2-transitions": "^0.2.3"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
+    "axios": "^0.18.0",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.2.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",

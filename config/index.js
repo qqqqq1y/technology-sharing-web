@@ -10,7 +10,15 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/web': {
+        target: 'https://hctest.hushijie.com.cn/',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/web': '/web',
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
